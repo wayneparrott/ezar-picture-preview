@@ -147,7 +147,7 @@ angular.module('ionicApp', ['ionic'])
         }, 1000);
           
         if (window.ezar) {
-           ezar.initialize(
+           ezar.initializeVideoOverlay(
 	  			function() {
                     ezar.getBackCamera().start();
                 },
@@ -182,7 +182,7 @@ angular.module('ionicApp', ['ionic'])
               //show snapshot button
               element.className = "";
           },null,
-          {encodingType: ezar.ImageEncodingType.PNG,
+          {encodingType: ezar.ImageEncoding.PNG,
            saveToPhotoAlbum: true});
         
       }
